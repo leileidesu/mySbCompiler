@@ -1,0 +1,82 @@
+//
+// Created by Administrator on 2022-09-30.
+//
+
+#ifndef OUT_SYNTYPE_H
+#define OUT_SYNTYPE_H
+#include<iostream>
+#include<vector>
+enum synType
+{
+    CompUnit_,
+    Decl_,
+    ConstDecl_,
+    BType_,
+    ConstDef_,
+    ConstInitVal_,
+    VarDecl_,
+    VarDef_,
+    InitVal_,
+    FuncDef_,
+    MainFuncDef_,
+    FuncType_,
+    FuncFParams_,
+    FuncFParam_,
+    Block_,
+    BlockItem_,
+    Stmt_,
+    Exp_,
+    Cond_,
+    LVal_,
+    PrimaryExp_,
+    Number_,
+    UnaryExp_,
+    UnaryOp_,
+    FuncRParams_,
+    MulExp_,
+    AddExp_,
+    RelExp_,
+    EqExp_,
+    LAndExp_,
+    LOrExp_,
+    ConstExp_,
+    TokenNode_,
+    IntConst_
+};
+static std::vector <std::string> numToSyn={
+        "CompUnit",
+        "Decl",
+        "ConstDecl",
+        "BType",
+        "ConstDef",
+        "ConstInitVal",
+        "VarDecl",
+        "VarDef",
+        "InitVal",
+        "FuncDef",
+        "MainFuncDef",
+        "FuncType",
+        "FuncFParams",
+        "FuncFParam",
+        "Block",
+        "BlockItem",
+        "Stmt",
+        "Exp",
+        "Cond",
+        "LVal",
+        "PrimaryExp",
+        "Number",
+        "UnaryExp",
+        "UnaryOp",
+        "FuncRParams",
+        "MulExp",
+        "AddExp",
+        "RelExp",
+        "EqExp",
+        "LAndExp",
+        "LOrExp",
+        "ConstExp",
+        "TokenNode",
+        "IntConst_"
+};
+#endif //OUT_SYNTYPE_H
