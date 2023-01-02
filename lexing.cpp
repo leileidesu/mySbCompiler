@@ -104,41 +104,20 @@ void DFA(std::string raw)
     end_ = &(raw[0]) + len;
     while (tmp - &raw[0] < len)
     {
-
         if (*tmp == ' ' || *tmp == '\t')
-        {
             tmp++;
-        }
         else if (*tmp == '\n')
         {
             tmp++;
             currentLine++;
         }
         else if (isdigit(*tmp))
-        {
             DFAIntConst();
-        }
         else if (isalpha(*tmp) || *tmp == '_')
-        {
             DFAReserved();
-        }
         else if (*tmp == '"')
-        {
-
                 DFAFormatString();
-
-
-        }
         else
-        {
             DFASymbols();
-        }
     }
-  
-    // ofstream output("output.txt");
-    // for (int i = 0; i < token::tokens.size(); i++)
-    // {
-    //     cout<< numToEnum[token::tokens[i]->type] << " " << token::tokens[i]->str << endl;
-    // }
-    // output.close();
 }

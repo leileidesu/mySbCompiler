@@ -11,7 +11,6 @@
 #include"exception.h"
 class node {
 public:
-
     virtual  void output(std::ofstream &outputStream) =0;
     virtual synType nodeTypeEnum()=0;
     vector<node*> sonNodes;
@@ -19,8 +18,8 @@ public:
         this->sonNodes=a;
     }
     virtual void exceptionHandler()=0;
+    virtual void IRVisit()=0;
 };
-
 class tokenNode:public node,public token {
 public:
 
@@ -36,6 +35,7 @@ public:
     };
     static int analyzing(node** ret,vector<token*>::iterator &i,typeCode code);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 
 };
 class BlockItem : public node{
@@ -51,11 +51,14 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
+class symbolTable;
 class Block : public node{
 public:
 
     string nodeType="Block";
+    symbolTable * table;
     synType nodeTypeEnum() override{
         return Block_;
     }
@@ -65,11 +68,13 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class Stmt : public node{
 public:
 
     string nodeType="Stmt";
+    string label;
     synType nodeTypeEnum() override{
         return Stmt_;
     }
@@ -79,6 +84,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override;
+    void IRVisit() override;
 };
 class FuncType : public node{
 public:
@@ -93,6 +99,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class FuncFParam : public node{
 public:
@@ -107,6 +114,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class FuncFParams : public node{
 public:
@@ -120,6 +128,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class FuncDef : public node{
 public:
@@ -133,6 +142,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override;
+    void IRVisit() override;
 };
 class InitVal : public node{
 public:
@@ -147,6 +157,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class VarDef : public node{
 public:
@@ -161,6 +172,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override;
+    void IRVisit() override;
 };
 class ConstInitVal : public node{
 public:
@@ -175,6 +187,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class ConstDef : public node{
 public:
@@ -189,6 +202,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override;
+    void IRVisit() override;
 };
 class VarDecl : public node{
 public:
@@ -203,6 +217,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class ConstDecl : public node{
 public:
@@ -217,6 +232,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class Decl : public node{
 public:
@@ -231,6 +247,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class MainFuncDef : public node{
 public:
@@ -245,6 +262,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override;
+    void IRVisit() override;
 };
 class CompUnit : public node{
 public:
@@ -258,6 +276,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override;
 };
 class Exp : public node{
 public:
@@ -270,11 +289,17 @@ public:
     };
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
-    void exceptionHandler() override{};
+    void exceptionHandler() override{};;
+    void IRVisit() override{};
 };
 class Cond : public node{
 public:
     string nodeType="Cond";
+    vector<int> group;
+    int startBlock=-1;
+    int ifblock=-1;
+    int elseblock=-1;
+    int final=-1;
     synType nodeTypeEnum() override{
         return Cond_;
     }
@@ -284,6 +309,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class LVal : public node{
 public:
@@ -297,6 +323,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override;
+    void IRVisit() override{};
 };
 class IntConst : public node{
 public:
@@ -310,6 +337,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class Number : public node{
 public:
@@ -323,6 +351,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class PrimaryExp : public node{
 public:
@@ -337,6 +366,8 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
+    node* IRVisit(node ** ret);
 };
 class FuncRParams : public node{
 public:
@@ -350,6 +381,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class ConstExp : public node{
 public:
@@ -363,6 +395,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class UnaryOp : public node{
 public:
@@ -376,6 +409,7 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
 };
 class UnaryExp: public node{
 public:
@@ -389,6 +423,8 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override;
+    void IRVisit() override{};
+    node* IRVisit(node ** ret);
 };
 class MulExp: public node{
 public:
@@ -402,6 +438,8 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
+    node* IRVisit(node ** ret);
 };
 class AddExp: public node{
 public:
@@ -415,6 +453,8 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
+    node* IRVisit(node ** ret);
 };
 class RelExp: public node{
 public:
@@ -428,6 +468,9 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
+    node* IRVisit(node ** ret);
+
 };
 class EqExp: public node{
 public:
@@ -441,6 +484,8 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
+    node* IRVisit(node ** ret);
 };
 class LAndExp: public node{
 public:
@@ -454,6 +499,8 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
+    node* IRVisit(node ** ret);
 };
 class LOrExp : public node{
 public:
@@ -467,6 +514,8 @@ public:
     using node::node;
     static int analyzing(node** ret,vector<token*>::iterator &i);
     void exceptionHandler() override{};
+    void IRVisit() override{};
+    node* IRVisit(node ** ret);
 };
 
 void lastOrder(node * root,std::ofstream &stream);

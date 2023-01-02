@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a79cb35-fcfd-49a8-94ee-42983ab95126" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/c_cpp_properties.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/myoutput9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/output9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A/testfile9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/myoutput9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/output9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B/testfile9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/myoutput9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/output9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/C/testfile9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compiler.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exceptionHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/exceptionHandler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/parsing.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/parsing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/symbolTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/symbolTable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/token.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/token.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/typeCode.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/typeCode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lexing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lexing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sboutput.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JmDx3VQnrIOe3xNRDj1PZEkSML" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a79cb35-fcfd-49a8-94ee-42983ab95126" name="Changes" comment="" />
+      <created>1672674610717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672674610717</updated>
+      <workItem from="1672674614108" duration="607000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

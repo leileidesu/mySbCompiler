@@ -61,12 +61,9 @@ int tokenNode::analyzing(node** ret,vector<token*>::iterator &i,typeCode code){
     return -1;
 }
 int BlockItem::analyzing(node** ret,vector<token*>::iterator &i){
-    cout<<"start analysing BlockItem"<<endl;
-    cout<<"current token is "<<(*i)->str<<endl;
     auto tmp=i;
     vector<node*>sonNodes={};
     node * res;
-
     if( Decl::analyzing(&res,tmp)==0){
         sonNodes.push_back(res);
     }
@@ -76,7 +73,6 @@ int BlockItem::analyzing(node** ret,vector<token*>::iterator &i){
     else return -1;
     i=tmp;
     *ret=new BlockItem(sonNodes);
-    cout<<"BlockItem success"<<endl;
     return 0;
 }
 int Block::analyzing(node** ret,vector<token*>::iterator &i){
@@ -144,12 +140,14 @@ int Stmt::analyzing(node** ret,vector<token*>::iterator &i){
             sonNodes.push_back(new tokenNode(new token(")",RPARENT,line),{}));
         }
         if(Stmt::analyzing(&res,tmp)==0){
+            ((Stmt*)res)->label="if";
             sonNodes.push_back(res);
         }else return -1;
         if(tokenNode::analyzing(&res,tmp,ELSETK)==0){
             sonNodes.push_back(res);
             if(Stmt::analyzing(&res,tmp)==0)
             {
+                ((Stmt*)res)->label="else";
                 sonNodes.push_back(res);
             }else
             {
@@ -699,6 +697,30 @@ int VarDef::analyzing(node** ret,vector<token*>::iterator &i){
             cout<<" VarDef success"<<endl;
             return 0;
         }
+        else if(tokenNode::analyzing(&res,tmp1,GETINTTK)==0)
+        {
+            sonNodes.push_back(res);
+            if(tokenNode::analyzing(&res,tmp1,LPARENT)==0){
+                sonNodes.push_back(res);
+            }else return -1;
+            if(tokenNode::analyzing(&res,tmp1,RPARENT)==0){
+                sonNodes.push_back(res);
+            }else {
+
+                ///找到上一个非终结符的行号，一直找sonnodes[-1]直到最后的行号
+                node *tmp= sonNodes[sonNodes.size()-1];
+                while(tmp->sonNodes.size()!=0)tmp=tmp->sonNodes[tmp->sonNodes.size()-1];
+                int line=((tokenNode*)tmp)->line;
+
+                exceptions.push_back( new mis_r_parent(line));
+                sonNodes.push_back(new tokenNode(new token(")",RPARENT,line),{}));
+            }
+            i=tmp1;
+            *ret=new VarDef(sonNodes);
+            cout<<"VarDef success"<<endl;
+            return 0;
+
+        }
         else
         {
             sonNodes.pop_back();
@@ -906,8 +928,6 @@ int Decl::analyzing(node** ret,vector<token*>::iterator &i){
     return 0;
 }
 int MainFuncDef::analyzing(node** ret,vector<token*>::iterator &i){
-    cout<<"start analysing main"<<endl;
-    cout<<"current token is "<<(*i)->str<<endl;
     auto tmp=i;
     vector<node*>sonNodes={};
     node * res;
@@ -926,12 +946,10 @@ int MainFuncDef::analyzing(node** ret,vector<token*>::iterator &i){
     if(tokenNode::analyzing(&res,tmp,RPARENT)==0) {
         sonNodes.push_back(res);
     }else {
-
         ///找到上一个非终结符的行号，一直找sonnodes[-1]直到最后的行号
         node *tmp= sonNodes[sonNodes.size()-1];
         while(tmp->sonNodes.size()!=0)tmp=tmp->sonNodes[tmp->sonNodes.size()-1];
         int line=((tokenNode*)tmp)->line;
-
         exceptions.push_back( new mis_r_parent(line));
         sonNodes.push_back(new tokenNode(new token(")",RPARENT,line),{}));
     }
@@ -1258,6 +1276,7 @@ int MulExp::analyzing(node** ret,vector<token*>::iterator &i){
         sonNodes.push_back(res);
         while(tokenNode::analyzing(&res,tmp,MULT)==0
         ||tokenNode::analyzing(&res,tmp,DIV)==0
+          ||tokenNode::analyzing(&res,tmp,BITANDTK)==0
         ||tokenNode::analyzing(&res,tmp,MOD)==0){
             sonNodes.push_back(res);
             if(UnaryExp::analyzing(&res,tmp)==0){
@@ -1569,10 +1588,7 @@ node * parsing()
 {
     auto begin=token::tokens.begin();
     node *a= nullptr;
-
-        CompUnit::analyzing(&a,begin);
-
-
+    CompUnit::analyzing(&a,begin);
     cout<<"finished parsing"<<endl;
     return a;
 }

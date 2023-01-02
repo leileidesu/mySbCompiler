@@ -17,9 +17,7 @@ public:
         this->type = b;
         this->line = c;
     }
-
     static  vector<token*> tokens;
-
 };
 
 // extern vector<token*> tokens;

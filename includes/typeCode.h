@@ -44,7 +44,8 @@ enum typeCode
       LBRACK,
       RBRACK,
       LBRACE,
-      RBRACE
+      RBRACE,
+    BITANDTK
 };
 static std::vector <std::string> numToEnum={
     "IDENFR",
@@ -84,8 +85,9 @@ static std::vector <std::string> numToEnum={
       "LBRACK",
       "RBRACK",
       "LBRACE",
-      "RBRACE"};
-static std::map<std::string, typeCode> reservedMap{{"main", MAINTK}, {"const", CONSTTK}, {"int", INTTK}, {"break", BREAKTK}, {"continue", CONTINUETK}, {"if", IFTK}, {"else", ELSETK}, {"while", WHILETK}, {"getint", GETINTTK}, {"printf", PRINTFTK}, {"return", RETURNTK}, {"void", VOIDTK}};
+      "RBRACE",
+      "BITANDTK"};
+static std::map<std::string, typeCode> reservedMap{{"main", MAINTK}, {"const", CONSTTK}, {"int", INTTK}, {"break", BREAKTK}, {"continue", CONTINUETK}, {"if", IFTK}, {"else", ELSETK}, {"while", WHILETK}, {"getint", GETINTTK}, {"printf", PRINTFTK}, {"return", RETURNTK}, {"void", VOIDTK},{"bitand",BITANDTK}};
 static std::map<std::string, typeCode> doubleCharMap{
     {"&&", AND}, {"||", OR}, {"<=", LEQ}, {">=", GEQ}, {"==",EQL,},
     {"!=", NEQ}};

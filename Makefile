@@ -1,5 +1,5 @@
 all:
-	g++ -std=c++11 -O2   main.cpp lexing.cpp io.cpp token.cpp parsing.cpp exceptionHandler.cpp -I ./includes
+	g++ -std=c++11 -O2   main.cpp lexing.cpp io.cpp token.cpp parsing.cpp exceptionHandler.cpp IRVisitor.cpp -I ./includes
 
 fc:
 	fc A\myoutput1.txt A\output1.txt
@@ -92,3 +92,36 @@ fc:
 	fc C\myoutput28.txt C\output28.txt
 	fc C\myoutput29.txt C\output29.txt
 	fc C\myoutput30.txt C\output30.txt
+
+ll:
+	llvm-link myoutput1.ll lib.ll -S -o out.ll
+	llvm-link myoutput2.ll lib.ll -S -o out.ll
+	llvm-link myoutput3.ll lib.ll -S -o out.ll
+	llvm-link myoutput4.ll lib.ll -S -o out.ll
+	llvm-link myoutput5.ll lib.ll -S -o out.ll
+	llvm-link myoutput6.ll lib.ll -S -o out.ll
+	llvm-link myoutput7.ll lib.ll -S -o out.ll
+	llvm-link myoutput8.ll lib.ll -S -o out.ll
+	llvm-link myoutput9.ll lib.ll -S -o out.ll
+	llvm-link myoutput10.ll lib.ll -S -o out.ll
+	llvm-link myoutput11.ll lib.ll -S -o out.ll
+	llvm-link myoutput12.ll lib.ll -S -o out.ll
+	llvm-link myoutput13.ll lib.ll -S -o out.ll
+	llvm-link myoutput14.ll lib.ll -S -o out.ll
+	llvm-link myoutput15.ll lib.ll -S -o out.ll
+	llvm-link myoutput16.ll lib.ll -S -o out.ll
+	llvm-link myoutput17.ll lib.ll -S -o out.ll
+	llvm-link myoutput18.ll lib.ll -S -o out.ll
+	llvm-link myoutput19.ll lib.ll -S -o out.ll
+	llvm-link myoutput20.ll lib.ll -S -o out.ll
+	llvm-link myoutput21.ll lib.ll -S -o out.ll
+	llvm-link myoutput22.ll lib.ll -S -o out.ll
+	llvm-link myoutput23.ll lib.ll -S -o out.ll
+	llvm-link myoutput24.ll lib.ll -S -o out.ll
+	llvm-link myoutput25.ll lib.ll -S -o out.ll
+	llvm-link myoutput26.ll lib.ll -S -o out.ll
+	llvm-link myoutput27.ll lib.ll -S -o out.ll
+	llvm-link myoutput28.ll lib.ll -S -o out.ll
+	llvm-link myoutput29.ll lib.ll -S -o out.ll
+	llvm-link myoutput30.ll lib.ll -S -o out.ll
+

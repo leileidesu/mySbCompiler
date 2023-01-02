@@ -158,7 +158,6 @@ int hasReturn(node * block ,int&line )
     }
     return 0;
 }
-
 void ConstDef::exceptionHandler() {
     vector<node *> sons=this->sonNodes;
     string name=((tokenNode*)sons[0])->str;
@@ -179,18 +178,18 @@ void ConstDef::exceptionHandler() {
             dim++;
         }
     }
-    (currentTable->varSymbols).insert(pair<string,varSymbol*>(name,new varSymbol(name,isConst,dim)));
+    varSymbol * newone=new varSymbol(name,isConst,dim);
+    //newone->values.push_back();
+    (currentTable->varSymbols).insert(pair<string,varSymbol*>(name,newone));
     return;
 }
 void VarDef::exceptionHandler(){
     vector<node *> sons=this->sonNodes;
     string name=((tokenNode*)sons[0])->str;
-
     int line=((tokenNode*)sons[0])->line;
     if(currentTable->varSymbols.find(name)!=currentTable->varSymbols.end())
     {
         ///重复定义
-       // cout<< duplicated_ident(line).what()<<endl;
         exceptions.push_back( new duplicated_ident(line));
         return ;
     }
@@ -227,8 +226,9 @@ void FuncDef::exceptionHandler(){
         retType=0;
     }
     cout<<"a new fun "<<name<<retType<<endl;
-    auto *tmp1=new funcSymbol(name,retType,{});
+    funcSymbol *tmp1=new funcSymbol(name,retType,{});
     if(sons[3]->nodeTypeEnum()==FuncFParams_){
+        tmp1->ff=(FuncFParams*)sons[3];
         vector<node *> sonsons=sons[3]->sonNodes;
         int lenlen=sonsons.size();
         for(int i=0;i<lenlen;i+=2){
@@ -309,7 +309,7 @@ void MainFuncDef::exceptionHandler(){
     return ;
 
 }
-void  LVal::exceptionHandler(){
+void LVal::exceptionHandler(){
     vector<node *> sons=this->sonNodes;
     string name=((tokenNode*)sons[0])->str;
 
@@ -462,24 +462,15 @@ void Stmt::exceptionHandler(){
 //    cout<<"here"<<endl;
 }
 void lastOrder1(node * a){
-        cout<<numToSyn[a->nodeTypeEnum()]<<endl;
         if(a != nullptr){
             vector<node*>::iterator i;
             if(a->nodeTypeEnum()==Block_)
             {
-                cout<<"funcname="<<funcName<<endl;
-                for(auto i: currentTable->funcSymbols){
-                    cout<<i.first<<endl;
-                }
-
                 if(funcName!=""&& currentTable->funcSymbols.find(funcName)!=currentTable->funcSymbols.end())
                 {
                     vector<struct param>xingCan=(currentTable->funcSymbols.find(funcName))->second->params;
                     currentTable=new symbolTable(currentTable, (currentTable->funcSymbols.find(funcName))->second);
-
-
                     int len=xingCan.size();
-
                     for(int i=0;i<len;i++)
                     {
                         string name=xingCan[i].name;
@@ -488,20 +479,14 @@ void lastOrder1(node * a){
                     }
                     funcName="";
                 }
-
                 else
                 {
                     currentTable=new symbolTable(currentTable, nullptr);
                 }
-                cout<<"------- into a new block -------"<<endl;
-                for(auto jj:currentTable->varSymbols)
-                {
-                    cout<<jj.first<<endl;
-                }
-                cout<<"-----------------------"<<endl;
+                currentTable->parentBlock=(Block*)a;
+                ((Block*)a)->table=currentTable;
             }
             a->exceptionHandler();
-
             for(i = a->sonNodes.begin(); i < a->sonNodes.end (); ++i)
             {
                 if(a->nodeTypeEnum()==Stmt_&&a->sonNodes[0]->nodeTypeEnum()==TokenNode_&&((tokenNode*)a->sonNodes[0])->type==WHILETK&&(*i)->nodeTypeEnum()==Stmt_)
@@ -512,7 +497,6 @@ void lastOrder1(node * a){
                 }
                 else lastOrder1(*i);
             }
-
             if(a->nodeTypeEnum()==Block_)
             {
                 currentTable=currentTable->parent;
